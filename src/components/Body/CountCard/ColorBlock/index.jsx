@@ -11,15 +11,12 @@ const colors = [
   'gray'
 ];
 
-const ColorBlock = () => {
-  const div = document.querySelector('div')
-  let i = 0;
+const ColorBlock = props => {
+  const { count } = props;
 
-  div.onclick = () => div.style.background = colors[++i % colors.length];
+  let color = colors[count % colors.length];
 
-  return (
-     <div />
-  );
-}
+  return <div style={{ background: color }}>{count}</div>
+};
 
 export default ColorBlock;
