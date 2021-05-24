@@ -1,33 +1,26 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react'
+import ColorBlock from './ColorBlock';
 
-const colors = ['red', 'blue', 'green', 'yellow', 'cyan', 'magenta', 'black', 'gray'];
 
 const CountCard = () => {
-  const [count, setCount ]= useState(0);
-  const [color, setColor] = useState('red');
-  const [isRed, setIsRed] = useState(true);
-
-   
+  const [count, setCount] = useState(0)
 
   const increment = () => {
-    setCount(count + 1);
-    setIsRed(!isRed);
-    setColor(isRed ? color === colors.id : 'red');
-  };
- 
-  const decrement = () => setCount(count - 1);
+    setCount(count + 1)
+   
+  }
 
-  
+  const decrement = () => setCount(count - 1)
 
   return (
-    <div>
+    <article>
       <h1>Card 1</h1>
       <h2>Count: {count}</h2>
-      <div style={{background:color}}>0</div>
+      <ColorBlock />
       <button onClick={decrement}>minus</button>
       <button onClick={increment}>plus</button>
-    </div>
-  );
+    </article>
+  )
 }
 
-export default CountCard;
+export default CountCard
