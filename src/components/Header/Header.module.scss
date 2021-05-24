@@ -1,0 +1,12 @@
+.headerWrap {
+  background-color: white;
+  min-width: 100%;
+  min-height: 50px;
+  padding: 20px;
+}
+
+@media screen and (max-width: 576px) {
+  .headerWrap {
+   text-align: center;
+  }
+}

@@ -1,4 +1,5 @@
 import React from 'react';
+import style from './ColorBlock.module.scss';
 
 const colors = [
   'red',
@@ -16,7 +17,7 @@ const ColorBlock = props => {
 
   let color = colors[count % colors.length];
 
-  return <div style={{ background: color }}>{count}</div>
+  return <div className={style.colorBlock} style={{ background: color }}></div>
 };
 
 export default ColorBlock;

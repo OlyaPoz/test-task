@@ -1,0 +1,42 @@
+.cardWrap {
+  display: flex;
+  flex-direction: column;
+  min-width: 250px;
+  background-color: white;
+  margin: 15px auto;
+  border-radius: 7px;
+  padding: 15px;
+
+  .heading {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+
+  .headingWrap, .btnWrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .btnWrap {
+    margin-top: 35px;
+
+    .btnMinus, .btnPlus {
+      padding: 0;
+      border: none;
+      font: inherit;
+      color: inherit;
+      background-color: transparent;
+      font-weight: bold;
+      font-size: 20px;
+    }
+  
+    .btnMinus {
+      color: red;
+    }
+  
+    .btnPlus {
+      color: green;
+    }
+  }
+}
